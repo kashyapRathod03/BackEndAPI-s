@@ -1,6 +1,6 @@
 // // const stripe = require("stripe")(process.env.STRIPE_SECRET);
 
-const stripe = require("stripe")('sk_test_51NqXwaSGJllTVAbLYtmlNx1R8qUIgw68liy3Ae2G9llS3BpjP9Gz2RpmAIoLqQmJyhvmSTVMprk3rOGPmHxsDLGA00FVHzRwvy');
+const stripe = require("stripe")(process.env.STRIPE_SECRET);
 
 exports.buynNowSession = async (req, res) => {
     const { products } = req.body;
